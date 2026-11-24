@@ -1271,8 +1271,8 @@ bash /root/soal-3.sh
    ```
 
 3. **Bukti Screenshot**
-   - *(Lampirkan screenshot saat menjalankan `break_routing.sh` dan kondisi `ping` gagal sebelum diperbaiki)*
-   - *(Lampirkan screenshot output `sysctl`, `ip rule`, `ip route` di **Shigeru** serta hasil `ping -c 3 192.233.4.83` dari **Lilith** dengan status `0% packet loss`)*
+   
+   ![Bukti screenshot soal 9](./screenshots/soal%209.png)
 
 ---
 
@@ -1328,7 +1328,8 @@ Jalankan perintah berikut untuk menghapus masing-masing aturan sabotase:
    ```
 
 3. **Bukti Screenshot**
-   - *(Lampirkan screenshot output `iptables -t nat -S` pada **Misato** dan **Gendou** sebelum dan sesudah perbaikan)*
-   - *(Lampirkan screenshot hasil `ping -c 3 8.8.8.8` dari terminal **Unit-01** dengan status `0% packet loss`)*
+   
+
+   ![Bukti screenshot soal 10](./screenshots/soal%2010.png)
 
 ---
