@@ -29,11 +29,10 @@ chmod +x /root/tokyo3-core.sh
 bash /root/tokyo3-core.sh
 iptables -L INPUT -n -v --line-numbers
 
-# pengujian di unit - 01
-
+# Di Lilith: ping rapat -> tunggu 3 detik -> ping biasa
+ping -i 0.1 -c 50 <IP_TOKYO3>
+sleep 3
 ping -c 5 <IP_TOKYO3>
-
-ping -c 30 -i 0.05 <IP_TOKYO3>
 
 # cek counter di tokyo dan uji ping
 
@@ -41,5 +40,7 @@ iptables -L INPUT -n -v
 
 ping -c 10 -i 0.05 8.8.8.8
 ss -tlnp | grep -E ':80|:8080'
+
+
 
 
